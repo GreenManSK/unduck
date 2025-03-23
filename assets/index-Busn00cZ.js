@@ -7,7 +7,7 @@
           <input 
             type="text" 
             class="url-input"
-            value="https://unduck.link?q=%s"
+            value="https://greenmansk.github.io/unduck?q=%s"
             readonly 
           />
           <button class="copy-button">

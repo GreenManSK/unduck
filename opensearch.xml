@@ -2,7 +2,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
     <ShortName>GreenUnduck</ShortName>
     <Description>Fork of Unduck</Description>
-    <Url type="text/html" template="https://unduck.link/?q={searchTerms}" />
-    <Image height="16" width="16" type="image/x-icon">https://unduck.link/search.svg</Image>
+    <Url type="text/html" template="https://greenmansk.github.io/unduck/?q={searchTerms}" />
+    <Image height="16" width="16" type="image/x-icon">https://greenmansk.github.io/unduck/search.svg</Image>
     <InputEncoding>UTF-8</InputEncoding>
 </OpenSearchDescription>
