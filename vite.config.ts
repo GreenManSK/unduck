@@ -4,9 +4,9 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 
 export default defineConfig({
   plugins: [
-    VitePWA({
-      registerType: "autoUpdate",
-    }),
+    // VitePWA({
+    //   registerType: "autoUpdate",
+    // }),
     viteSingleFile(),
   ],
   base: "/unduck/",
