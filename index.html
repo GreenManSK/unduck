@@ -45,7 +45,7 @@
       </footer>
     </div>
   `;const c=t.querySelector(".copy-button"),r=t.querySelector(".url-input");c.addEventListener("click",async()=>{await navigator.clipboard.writeText(r.value)})}const l=localStorage.getItem("default-bang")??"g",p=w.find(t=>t.t===l);function m(){var i,n;const c=((i=new URL(window.location.href).searchParams.get("q"))==null?void 0:i.trim())??"";if(!c)return d(),null;const r=c.match(/!(\S+)/i),o=(n=r==null?void 0:r[1])==null?void 0:n.toLowerCase(),e=w.find(h=>h.t===o)??p,s=c.replace(/!\S+\s*/i,"").trim(),a=e==null?void 0:e.u.replace("{{{s}}}",encodeURIComponent(s).replace(/%2F/g,"/"));return a||null}function u(){const t=m();t&&window.location.replace(t)}u();</script>
-  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+  </head>
   <body style="background-color: transparent">
     <div id="app"></div>
   </body>
