@@ -1,5 +1,4 @@
 import { bangs } from "./bang";
-import "./global.css";
 
 function noSearchDefaultPageRender() {
   const app = document.querySelector<HTMLDivElement>("#app")!;
@@ -16,7 +15,7 @@ function noSearchDefaultPageRender() {
             readonly 
           />
           <button class="copy-button">
-            <img src="/clipboard.svg" alt="Copy" />
+            Copy
           </button>
         </div>
       </div>
@@ -31,16 +30,10 @@ function noSearchDefaultPageRender() {
   `;
 
   const copyButton = app.querySelector<HTMLButtonElement>(".copy-button")!;
-  const copyIcon = copyButton.querySelector("img")!;
   const urlInput = app.querySelector<HTMLInputElement>(".url-input")!;
 
   copyButton.addEventListener("click", async () => {
     await navigator.clipboard.writeText(urlInput.value);
-    copyIcon.src = "/clipboard-check.svg";
-
-    setTimeout(() => {
-      copyIcon.src = "/clipboard.svg";
-    }, 2000);
   });
 }
 
